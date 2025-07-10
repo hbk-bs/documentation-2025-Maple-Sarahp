@@ -1,4 +1,12 @@
-
+:root {
+    --banner: #3498db;
+    --ueberschrift: #2ecc71;
+    --text: #333;
+    --highlight: #f4f4f4;
+}
+html, body {
+    height: 100%;
+}
 main{
     display: flex;
  justify-content: center;
