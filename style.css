@@ -4,14 +4,18 @@
     --text: #333;
     --highlight: #f4f4f4;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
-main{
+
+main {
     display: flex;
- justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -19,6 +23,6 @@ body {
     background-color: #f4f4f4;
 }
 
-footer{
+footer {
     position: absolute;
 }
