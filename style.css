@@ -1,28 +1,84 @@
 :root {
     --banner: #3498db;
     --ueberschrift: #2ecc71;
-    --text: #333;
+    --text: #c8c9e4;
     --highlight: #f4f4f4;
+
+    --bg-start: #303032;
+    --bg-projects: #222224;
+    --bg-about: #272777;
 }
 
 html,
 body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
 }
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    min-height: 100vh;
+    width: 100vw;
+
+    a {
+        color: var(--highlight);
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: var(--text);
+        text-decoration: none;
+
+    }
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
 
 footer {
     position: absolute;
+}
+
+header {
+    background-color: var(--bg-about);
+    color: var(--highlight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.start-section {
+    background-color: var(--bg-start);
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    min-width: 0;
+}
+
+.about-section {
+    background-color: var(--bg-about);
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    min-width: 0;
+
+    color: var(--text);
+}
+
+.projects-section {
+    background-color: var(--bg-projects);
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    min-width: 0;
 }
