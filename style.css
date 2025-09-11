@@ -4,17 +4,58 @@
     --text: #c8c9e4;
     --highlight: #f4f4f4;
 
-    --bg-start: #303032;
-    --bg-projects: #222224;
-    --bg-about: #272777;
+    --bg-start: #1859c2;
+    --bg-projects: #ed66d0e2;
+    --bg-about: #171717;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    min-height: 100vw;
     color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    background-color: var(--bg-about);
+    color: var(--highlight);
+
+}
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 1em;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header.container {
+    padding: 1em 20px;
 }
 
 main {
@@ -35,21 +76,18 @@ main {
         text-decoration: none;
 
     }
+
+    .about-section,
+    .projects-section,
+    .start-section {
+        display: flex;
+    }
 }
 
 
-footer {
-    position: absolute;
-}
 
-header {
-    background-color: var(--bg-about);
-    color: var(--highlight);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+
+
 
 .start-section {
     background-color: var(--bg-start);
@@ -57,8 +95,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 0;
+    min-height: 100vw;
+    width: 100vw;
     min-width: 0;
+
+    h1 {
+        color: var(--highlight);
+        text-align: center;
+        font-weight: 100;
+        font-size: 4em;
+    }
+
+    h2 {
+        color: var(--text);
+        text-align: center;
+        font-weight: 100;
+        font-size: 2em;
+    }
 }
 
 .about-section {
@@ -82,3 +135,11 @@ header {
     min-height: 0;
     min-width: 0;
 }
+
+footer {
+    position: absolute;
+}
+
+@media (max-width: 700px) {}
+
+@media (max-width: 480px) {}
