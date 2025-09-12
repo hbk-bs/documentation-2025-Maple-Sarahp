@@ -1,28 +1,183 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code of Nature - Branching Bushes</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>LLMs and Dragons</title>
     <link rel="icon" href="https://i.pinimg.com/736x/f0/79/a9/f079a93953f3e164aedd60f59f7aaa61.jpg">
-    <script src="script.js" defer></script>
+    <style>
+        :root {
+            --banner: #3498db;
+            --ueberschrift: #030303;
+            --text: #f28be9;
+            --fliestext: #d2d2d2;
+            --highlight: #121212;
+            --bg-start: #eeeeee;
+            --bg-projects: #ffb2eee2;
+            --bg-about: #ffffff;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        html, body {
+            min-height: 100vh;
+            color: black;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: var(--bg-about);
+            color: var(--highlight);
+            padding: 1em 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--ueberschrift);
+        }
+
+        .navi ul {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+        }
+
+        .navi a {
+            color: var(--highlight);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navi a:hover {
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        main {
+            padding-top: 100px; 
+            min-height: 100vh;
+        }
+
+        .explain {
+            background-color: var(--bg-start);
+            padding: 3em 0;
+            min-height: calc(100vh - 100px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .explain .container {
+            text-align: center;
+        }
+
+        .explain h1 {
+            color: var(--highlight);
+            font-weight: 100;
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+
+        .explain p {
+            color: var(--text);
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 1em 0;
+        }
+
+        .explain li {
+            list-style: none;
+            margin: 1.5em 0;
+        }
+
+        .explain a {
+            color: var(--highlight);
+            text-decoration: underline;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .explain a:hover {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .explain h1 {
+                font-size: 2em;
+            }
+
+            main {
+                padding-top: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .explain h1 {
+                font-size: 1.5em;
+            }
+
+            .explain p, .explain a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <div id="banner">
+    <header class="header">
+        <div class="logo" id="banner">
             Sals Archive 2
         </div>
-
+        <nav class="navi">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#meme">Meme</a></li>
+            </ul>
+        </nav>
     </header>
+    
     <main>
-        <div class="container">
-
-            <h1>Teachable Machine</h1>
-            <li><a href="https://hbk-bs.github.io/teachable-machine-Maple-Sarahp/">Teachable Machine - what genre is
-                    THAT?</a></li>
-        </div>
+        <section class="explain" id="start">
+            <div class="container">
+                <h1>Teachable Machine</h1>
+                <li>
+                    <a href="https://hbk-bs.github.io/teachable-machine-Maple-Sarahp">
+                        Teachable Machine
+                    </a>
+                </li>
+                <p>In dies mnmmkjjner - Hier steht dein Text, der jetzt sichtbar sein sollte!</p>
+            </div>
+        </section>
     </main>
 </body>
-
 </html>
