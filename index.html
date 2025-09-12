@@ -21,7 +21,7 @@
                     <li><a href="#projects">Works</a></li>
                     <li><a href="https://github.com/hbk-bs/documentation-2025-Maple-Sarahp">Repository</a></li>
                 </ul>
-                </ul>
+            </nav>
         </div>
     </header>
 
@@ -97,10 +97,31 @@
         </section>
     </main>
 
+    <button class="back-to-top" id="backToTopBtn" title="Go to top">↑</button>
+
     <hr style="border-color: gray; border-width: 0.5px;">
     <footer>
         <p>&copy; 2025 Sarah Lutterloh - Digitale Kommunikation 2 - VK</p>
     </footer>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
