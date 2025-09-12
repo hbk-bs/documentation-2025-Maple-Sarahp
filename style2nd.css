@@ -96,6 +96,8 @@ main {
 }
 
 .explain p {
+    text-align: left;
+    max-width: 800px;
     color: var(--text);
     font-size: 1.2em;
     line-height: 1.6;
