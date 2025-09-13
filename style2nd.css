@@ -1,14 +1,16 @@
 /*Palmtree Panic - "P" mix*/
-/*em == elternelement und rem == unabhängig */
+/*em == elternelement und rem == unabhängig rarr*/
+
 :root {
     --banner: #3498db;
     --ueberschrift: #030303;
-    --text: #f28be9;
+    --text: #ed3ade;
     --fliestext: #d2d2d2;
     --highlight: #121212;
     --bg-start: #eeeeee;
     --bg-projects: #ffb2eee2;
     --bg-about: #ffffff;
+    --notsohighlight: #969696;
 }
 
 * {
@@ -125,12 +127,14 @@ main {
 
 .website-link:hover img {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+        filter: brightness(1.1);
+
 }
 
 .website-link span {
     display: block;
     margin-top: 0.5em;
-    color: var(--highlight);
+    color: var(--notsohighlight);
     font-weight: 500;
     font-size: 1.1em;
 }
@@ -218,8 +222,6 @@ main {
         height: 180px;
     }
 }
-
-/* Hover effects for better UX */
 .media img {
     transition: filter 0.3s ease;
 }
