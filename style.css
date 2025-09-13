@@ -136,7 +136,7 @@ main {
 }
 
 .projects li {
-    background: rgb(255, 255, 255);
+    background: var(--bg-about);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
@@ -169,7 +169,7 @@ main {
     font-size: 1.2rem;
     color: var(--highlight);
     text-align: center;
-    background: white;
+    background: var(--bg-about);
 }
 
 
