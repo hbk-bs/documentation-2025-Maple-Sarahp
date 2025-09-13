@@ -1,4 +1,5 @@
 /*Palmtree Panic - "P" mix*/
+/*em == elternelement und rem == unabhängig */
 :root {
     --banner: #3498db;
     --ueberschrift: #030303;
@@ -79,12 +80,10 @@ main {
     background-color: var(--bg-start);
     padding: 3em 0;
     min-height: calc(100vh - 100px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .explain .container {
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -101,48 +100,130 @@ main {
     color: var(--text);
     font-size: 1.2em;
     line-height: 1.6;
-    margin: 1em 0;
+    margin: 1em auto;
 }
 
-.explain li {
-    list-style: none;
-    margin: 1.5em 0;
-}
-
-.explain a {
-    color: var(--highlight);
-    text-decoration: underline;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-.explain a:hover {
-    color: var(--text);
+.website-link {
+    display: inline-block;
+    margin: 2em 0;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.website-link:hover {
+    transform: translateY(-3px);
+}
+
+.website-link img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.website-link:hover img {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.website-link span {
+    display: block;
+    margin-top: 0.5em;
+    color: var(--highlight);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3em auto;
+    max-width: 1000px;
+}
+
+.media img,
+.media video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.media video {
+    cursor: default;
 }
 
 @media (max-width: 768px) {
-    header .container {  
+    header .container {
         flex-direction: column;
         gap: 1em;
     }
 
     .explain h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     main {
         padding-top: 120px;
     }
+
+    .explain p {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .website-link img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .media {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .media img,
+    .media video {
+        height: 200px;
+    }
 }
 
 @media (max-width: 480px) {
     .explain h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
-    .explain p,
-    .explain a {
+    .explain p {
         font-size: 1em;
+        padding: 0 1rem;
     }
+
+    .website-link img {
+        width: 200px;
+        height: 140px;
+    }
+
+    .media {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .media img,
+    .media video {
+        height: 180px;
+    }
+}
+
+/* Hover effects for better UX */
+.media img {
+    transition: filter 0.3s ease;
+}
+
+.media img:hover {
+    filter: brightness(1.1);
 }
