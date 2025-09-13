@@ -98,7 +98,7 @@ main {
 
 .explain p {
     text-align: left;
-    max-width: 800px;
+    max-width: 600px;
     color: var(--text);
     font-size: 1.2em;
     line-height: 1.6;
@@ -135,8 +135,8 @@ main {
     display: block;
     margin-top: 0.5em;
     color: var(--notsohighlight);
-    font-weight: 500;
-    font-size: 1.1em;
+    font-weight: 300;
+    font-size: 1.15em;
 }
 
 .media {
