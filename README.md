@@ -7,19 +7,19 @@ Welcome traveler. This is an archive for my second semester of Basics of Digital
 
 The topics are :
 
-### o  Teachable Machine 
+###   Teachable Machine 
         Training an AI with a visual to implement in a fun website.
 
-### o  The Code of Nature
+###   The Code of Nature
         Project following an excursion to Amrum, finding a natural movement and translating it into code.
 
-### o  Text The Universal Interface
+###   Text The Universal Interface
         "Do not create a chatbot" using a ValTown LargeLanguageModel and AI.
 
-### o  A Generated Graphic Novel
+###   A Generated Graphic Novel
         A group project with the task of creating an AI generated graphic novel and building a website for the result.
         
-### o  A Debate Club over AI
+###   A Debate Club over AI
         Following a discussion over whether or not AI is a useful tool for designers.
 
 
