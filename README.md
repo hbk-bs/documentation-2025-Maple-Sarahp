@@ -22,6 +22,7 @@ The contained topics are:
 ###  A Debate Club over AI
   Following a discussion over whether or not AI is a useful tool for designers.
 
+_____________________________________________________________________________________________________________
 
 The website is structured and designed for mobile view also using a navigation bar on top. Therefore I built the starting page vertical using a grid for every element und sectioning the different topics.
 
