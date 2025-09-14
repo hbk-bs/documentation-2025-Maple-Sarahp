@@ -4,8 +4,10 @@
 :root {
     --banner: #3498db;
     --ueberschrift: #030303;
-    --text: #ed3ade;
+    --footer: #b3386d9c;
+    --text: #f44298;
     --fliestext: #d2d2d2;
+    --button: #c70871aa;
     --highlight: #121212;
     --bg-start: #eeeeee;
     --bg-projects: #ffb2eee2;
@@ -127,7 +129,7 @@ main {
 
 .website-link:hover img {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-        filter: brightness(1.1);
+    filter: brightness(1.1);
 
 }
 
@@ -170,7 +172,7 @@ main {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: var(--text);
+    background: var(--button);
     color: white;
     border: none;
     border-radius: 50%;
@@ -264,6 +266,7 @@ main {
         height: 180px;
     }
 }
+
 .media img {
     transition: filter 0.3s ease;
 }
